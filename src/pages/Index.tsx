@@ -516,7 +516,7 @@ export default function YerbaVerdeLandingPage() {
           <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 lg:flex-row lg:gap-12">
             <div className="about-image w-full lg:flex-1">
               <img
-                src="https://cdn.poehali.dev/projects/1f0965e0-c0e5-4b08-b4b7-23c744cc40d1/files/3c5be344-b5a4-434d-b29e-53bfdb07f88f.jpg"
+                src="https://cdn.poehali.dev/projects/1f0965e0-c0e5-4b08-b4b7-23c744cc40d1/files/ef78258f-6df9-4926-9e33-fe496254774f.jpg"
                 alt="Склад автозапчастей"
                 className="h-auto w-full rounded-2xl object-cover"
               />
@@ -563,7 +563,7 @@ export default function YerbaVerdeLandingPage() {
                 </div>
                 <div className="desire-image overflow-hidden rounded-2xl">
                   <img
-                    src="https://cdn.poehali.dev/projects/1f0965e0-c0e5-4b08-b4b7-23c744cc40d1/files/3c5be344-b5a4-434d-b29e-53bfdb07f88f.jpg"
+                    src="https://cdn.poehali.dev/projects/1f0965e0-c0e5-4b08-b4b7-23c744cc40d1/files/ef78258f-6df9-4926-9e33-fe496254774f.jpg"
                     alt="Склад запчастей"
                     className="h-full w-full object-cover"
                   />
