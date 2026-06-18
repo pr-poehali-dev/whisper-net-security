@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 gsap.registerPlugin(ScrollTrigger)
 
-const MANAGER_IMAGE = "https://cdn.poehali.dev/projects/1f0965e0-c0e5-4b08-b4b7-23c744cc40d1/files/6eb34fc5-f1b2-417a-912c-e63ee917f2d7.jpg"
+const MANAGER_IMAGE = "https://cdn.poehali.dev/projects/1f0965e0-c0e5-4b08-b4b7-23c744cc40d1/files/e47d4ca8-d22c-4ce1-93f8-e6fe32db78d3.jpg"
 
 function ManagerModal({ onClose }: { onClose: () => void }) {
   const [step, setStep] = useState<"greeting" | "form" | "success">("greeting")
