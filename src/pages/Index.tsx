@@ -1,13 +1,136 @@
 import { useEffect, useRef, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
+import Icon from "@/components/ui/icon"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 gsap.registerPlugin(ScrollTrigger)
 
+const MANAGER_IMAGE = "https://cdn.poehali.dev/projects/1f0965e0-c0e5-4b08-b4b7-23c744cc40d1/files/f48b7b5e-1da9-40f3-91eb-425580b0f553.jpg"
+
+function ManagerModal({ onClose }: { onClose: () => void }) {
+  const [step, setStep] = useState<"greeting" | "form" | "success">("greeting")
+  const [name, setName] = useState("")
+  const [phone, setPhone] = useState("")
+  const [car, setCar] = useState("")
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    setStep("success")
+  }
+
+  return (
+    <div
+      className="fixed inset-0 z-[200000] flex items-end justify-center bg-black/80 backdrop-blur-sm md:items-center"
+      onClick={onClose}
+    >
+      <div
+        className="relative w-full max-w-lg overflow-hidden rounded-t-3xl bg-[#0E0E0E] md:rounded-3xl"
+        onClick={e => e.stopPropagation()}
+      >
+        <div className="relative h-64 w-full overflow-hidden md:h-80">
+          <img
+            src={MANAGER_IMAGE}
+            alt="Менеджер"
+            className="h-full w-full object-cover object-top"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0E0E0E] via-[#0E0E0E]/30 to-transparent" />
+          <button
+            onClick={onClose}
+            className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full bg-black/50 text-white"
+          >
+            <Icon name="X" size={16} />
+          </button>
+          {step === "greeting" && (
+            <div className="absolute bottom-4 left-4 right-4">
+              <div className="rounded-2xl bg-white/10 px-4 py-3 backdrop-blur-md">
+                <p className="text-sm font-medium text-white">
+                  Привет! Я Анна, ваш личный менеджер 👋
+                </p>
+                <p className="mt-0.5 text-xs text-white/70">
+                  Помогу подобрать запчасти под ваш автомобиль
+                </p>
+              </div>
+            </div>
+          )}
+        </div>
+
+        <div className="p-6">
+          {step === "greeting" && (
+            <div className="flex flex-col gap-4">
+              <div>
+                <h3 className="font-serif text-xl text-white">Подберём вместе!</h3>
+                <p className="mt-1 text-sm text-white/60">Расскажите о своём автомобиле — я найду нужные детали</p>
+              </div>
+              <Button
+                className="h-12 w-full rounded-xl bg-gradient-to-r from-[#6B5C08] to-[#B59F26] text-base font-medium text-white"
+                onClick={() => setStep("form")}
+              >
+                Начать подбор
+              </Button>
+            </div>
+          )}
+
+          {step === "form" && (
+            <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+              <h3 className="font-serif text-xl text-white">Ваши данные</h3>
+              <input
+                className="h-11 rounded-xl border border-white/10 bg-white/5 px-4 text-sm text-white placeholder-white/30 outline-none focus:border-[#B59F26]"
+                placeholder="Ваше имя"
+                value={name}
+                onChange={e => setName(e.target.value)}
+                required
+              />
+              <input
+                className="h-11 rounded-xl border border-white/10 bg-white/5 px-4 text-sm text-white placeholder-white/30 outline-none focus:border-[#B59F26]"
+                placeholder="Телефон"
+                value={phone}
+                onChange={e => setPhone(e.target.value)}
+                required
+              />
+              <input
+                className="h-11 rounded-xl border border-white/10 bg-white/5 px-4 text-sm text-white placeholder-white/30 outline-none focus:border-[#B59F26]"
+                placeholder="Марка и модель авто (например: Toyota Camry 2018)"
+                value={car}
+                onChange={e => setCar(e.target.value)}
+                required
+              />
+              <Button
+                type="submit"
+                className="h-12 w-full rounded-xl bg-gradient-to-r from-[#6B5C08] to-[#B59F26] text-base font-medium text-white"
+              >
+                Отправить заявку
+              </Button>
+            </form>
+          )}
+
+          {step === "success" && (
+            <div className="flex flex-col items-center gap-4 py-2 text-center">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-r from-[#6B5C08] to-[#B59F26]">
+                <Icon name="Check" size={28} className="text-white" />
+              </div>
+              <div>
+                <h3 className="font-serif text-xl text-white">Отлично, {name}!</h3>
+                <p className="mt-1 text-sm text-white/60">Анна свяжется с вами в ближайшее время и подберёт запчасти</p>
+              </div>
+              <Button
+                className="h-11 w-full rounded-xl border border-white/10 bg-transparent text-sm text-white"
+                onClick={onClose}
+              >
+                Закрыть
+              </Button>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export default function YerbaVerdeLandingPage() {
   const [isLoading, setIsLoading] = useState(true)
+  const [showManager, setShowManager] = useState(false)
   const [progress, setProgress] = useState(0)
 
   const marqueeRef = useRef<HTMLDivElement>(null)
@@ -228,6 +351,7 @@ export default function YerbaVerdeLandingPage() {
 
   return (
     <>
+      {showManager && <ManagerModal onClose={() => setShowManager(false)} />}
       {isLoading && (
         <div className="fixed inset-0 z-[100000] flex flex-col items-center justify-center bg-[#0E0E0E]">
           <div className="flex flex-col items-center gap-8 px-6">
@@ -328,7 +452,7 @@ export default function YerbaVerdeLandingPage() {
                 Оригинальные запчасти и моторные масла для вашего автомобиля. Подбор по марке, быстрая доставка и гарантия качества.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-2.5">
-                <Button className="h-12 rounded-xl bg-white px-4 font-serif text-base text-[#0E0E0E] hover:bg-white/90 md:text-lg">
+                <Button onClick={() => setShowManager(true)} className="h-12 rounded-xl bg-white px-4 font-serif text-base text-[#0E0E0E] hover:bg-white/90 md:text-lg">
                   Подобрать запчасти
                 </Button>
                 <Button
@@ -409,8 +533,8 @@ export default function YerbaVerdeLandingPage() {
                 специалисты помогут подобрать именно то, что нужно вашему авто. От заявки до доставки —
                 всё прозрачно и быстро, чтобы ваша машина всегда была на ходу.
               </p>
-              <Button className="h-12 w-full rounded-[20px] bg-gradient-to-r from-[#6B5C08] to-[#B59F26] font-serif text-lg text-white hover:opacity-90 md:text-xl">
-                Перейти в каталог
+              <Button onClick={() => setShowManager(true)} className="h-12 w-full rounded-[20px] bg-gradient-to-r from-[#6B5C08] to-[#B59F26] font-serif text-lg text-white hover:opacity-90 md:text-xl">
+                Подобрать запчасти
               </Button>
             </div>
           </div>
@@ -471,7 +595,7 @@ export default function YerbaVerdeLandingPage() {
                 backgroundPosition: "center",
               }}
             >
-              <Button className="h-16 w-full max-w-md rounded-[20px] bg-gradient-to-r from-[#6B5C08] to-[#B59F26] font-serif text-xl text-white hover:opacity-90 md:h-24 md:text-3xl lg:text-[32px]">
+              <Button onClick={() => setShowManager(true)} className="h-16 w-full max-w-md rounded-[20px] bg-gradient-to-r from-[#6B5C08] to-[#B59F26] font-serif text-xl text-white hover:opacity-90 md:h-24 md:text-3xl lg:text-[32px]">
                 Подобрать запчасти
               </Button>
             </div>
@@ -520,7 +644,7 @@ export default function YerbaVerdeLandingPage() {
               </div>
               <p className="text-4xl font-bold tracking-tight text-white md:text-5xl">3 200 р.</p>
               <p className="text-xs tracking-tight text-white md:text-sm">В наличии на складе</p>
-              <Button className="h-12 w-full rounded-xl bg-[#B59F26] text-base font-medium text-white hover:bg-[#B59F26]/90 md:text-lg">
+              <Button onClick={() => setShowManager(true)} className="h-12 w-full rounded-xl bg-[#B59F26] text-base font-medium text-white hover:bg-[#B59F26]/90 md:text-lg">
                 КУПИТЬ
               </Button>
             </Card>
@@ -542,7 +666,7 @@ export default function YerbaVerdeLandingPage() {
               </div>
               <p className="text-4xl font-bold tracking-tight text-white md:text-5xl">5 900 р.</p>
               <p className="text-xs tracking-tight text-white md:text-sm">Выгоднее, чем по отдельности</p>
-              <Button className="h-12 w-full rounded-xl bg-[#B59F26] text-base font-medium text-white hover:bg-[#B59F26]/90 md:text-lg">
+              <Button onClick={() => setShowManager(true)} className="h-12 w-full rounded-xl bg-[#B59F26] text-base font-medium text-white hover:bg-[#B59F26]/90 md:text-lg">
                 КУПИТЬ
               </Button>
             </Card>
@@ -564,7 +688,7 @@ export default function YerbaVerdeLandingPage() {
               </div>
               <p className="text-4xl font-bold tracking-tight text-white md:text-5xl">2 400 р.</p>
               <p className="text-xs tracking-tight text-white md:text-sm">Подбор по марке авто</p>
-              <Button className="h-12 w-full rounded-xl bg-[#B59F26] text-base font-medium text-white hover:bg-[#B59F26]/90 md:text-lg">
+              <Button onClick={() => setShowManager(true)} className="h-12 w-full rounded-xl bg-[#B59F26] text-base font-medium text-white hover:bg-[#B59F26]/90 md:text-lg">
                 КУПИТЬ
               </Button>
             </Card>
@@ -586,7 +710,7 @@ export default function YerbaVerdeLandingPage() {
               </div>
               <p className="text-4xl font-bold tracking-tight text-white md:text-5xl">1 600 р.</p>
               <p className="text-xs tracking-tight text-white md:text-sm">Оригинал с гарантией</p>
-              <Button className="h-12 w-full rounded-xl bg-[#B59F26] text-base font-medium text-white hover:bg-[#B59F26]/90 md:text-lg">
+              <Button onClick={() => setShowManager(true)} className="h-12 w-full rounded-xl bg-[#B59F26] text-base font-medium text-white hover:bg-[#B59F26]/90 md:text-lg">
                 КУПИТЬ
               </Button>
             </Card>
@@ -600,7 +724,7 @@ export default function YerbaVerdeLandingPage() {
               <p className="flex-1 text-balance text-center font-semibold leading-tight tracking-tight text-white md:text-left md:text-2xl lg:text-[26px]">
                 Не нашли нужную деталь? Напишите нам — подберём запчасть под ваш автомобиль!
               </p>
-              <Button className="h-12 w-full rounded-xl bg-[#0E0E0E] text-base text-white hover:bg-[#0E0E0E]/90 md:w-auto md:px-8 md:text-lg">
+              <Button onClick={() => setShowManager(true)} className="h-12 w-full rounded-xl bg-[#0E0E0E] text-base text-white hover:bg-[#0E0E0E]/90 md:w-auto md:px-8 md:text-lg">
                 Связаться с нами
               </Button>
             </div>
