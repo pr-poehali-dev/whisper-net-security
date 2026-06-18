@@ -357,8 +357,7 @@ export default function YerbaVerdeLandingPage() {
           <div className="flex flex-col items-center gap-8 px-6">
             {/* Logo or brand name */}
             <h1 className="font-serif text-4xl tracking-tight text-white md:text-5xl lg:text-6xl">
-              AUTO
-              <span className="block text-[#B59F26]">PARTS</span>
+              <span className="text-[#B59F26]">TCV</span>
             </h1>
 
             {/* Progress bar container */}
@@ -735,10 +734,10 @@ export default function YerbaVerdeLandingPage() {
         <footer className="w-full border-t border-[#333333] px-6 py-12 md:px-20 lg:px-[420px]">
           <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-6">
             <h2 className="font-serif text-2xl tracking-tight text-white md:text-3xl">
-              AUTO <span className="text-[#B59F26]">PARTS</span>
+              <span className="text-[#B59F26]">TCV</span>
             </h2>
             <p className="text-center text-sm leading-relaxed tracking-tight text-white/55 md:text-base">
-              2025 - AutoParts. Автозапчасти и масла. Все права защищены.
+              2025 - TCV. Автозапчасти и масла. Все права защищены.
             </p>
           </div>
         </footer>
