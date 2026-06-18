@@ -233,8 +233,8 @@ export default function YerbaVerdeLandingPage() {
           <div className="flex flex-col items-center gap-8 px-6">
             {/* Logo or brand name */}
             <h1 className="font-serif text-4xl tracking-tight text-white md:text-5xl lg:text-6xl">
-              YERBA
-              <span className="block text-[#B59F26]">VERDE</span>
+              AUTO
+              <span className="block text-[#B59F26]">PARTS</span>
             </h1>
 
             {/* Progress bar container */}
@@ -257,7 +257,7 @@ export default function YerbaVerdeLandingPage() {
           <div className="marquee-content flex items-center gap-4 whitespace-nowrap">
             {/* First set of items */}
             <div className="flex items-center justify-center rounded-xl bg-white px-6 py-1.5 md:px-8">
-              <span className="font-serif text-xs font-normal text-black md:text-sm">ПРОМОКОД: ПЕРВЫЙ10</span>
+              <span className="font-serif text-xs font-normal text-black md:text-sm">ПРОМОКОД: ГАРАЖ10</span>
             </div>
             <div className="flex items-center justify-center rounded-xl px-4 py-1.5 md:px-6">
               <span className="font-serif text-xs font-normal text-white md:text-sm">
@@ -265,7 +265,7 @@ export default function YerbaVerdeLandingPage() {
               </span>
             </div>
             <div className="flex items-center justify-center rounded-xl bg-white px-6 py-1.5 md:px-8">
-              <span className="font-serif text-xs font-normal text-black md:text-sm">ПРОМОКОД: ПЕРВЫЙ10</span>
+              <span className="font-serif text-xs font-normal text-black md:text-sm">ПРОМОКОД: ГАРАЖ10</span>
             </div>
             <div className="flex items-center justify-center rounded-xl px-4 py-1.5 md:px-6">
               <span className="font-serif text-xs font-normal text-white md:text-sm">
@@ -273,17 +273,17 @@ export default function YerbaVerdeLandingPage() {
               </span>
             </div>
             <div className="flex items-center justify-center rounded-xl bg-white px-6 py-1.5 md:px-8">
-              <span className="font-serif text-xs font-normal text-black md:text-sm">ПРОМОКОД: ПЕРВЫЙ10</span>
+              <span className="font-serif text-xs font-normal text-black md:text-sm">ПРОМОКОД: ГАРАЖ10</span>
             </div>
             <div className="flex items-center justify-center rounded-xl px-4 py-1.5 md:px-6">
               <span className="font-serif text-xs font-normal text-white md:text-sm">
-                СКИДКА 10% НА ПЕРВЫЙ ЗАКАЗ
+                СКИДКА 10% НА ПЕРВЫЙ ЗАКАЗ • ДОСТАВКА ПО ВСЕЙ РОССИИ
               </span>
             </div>
 
             {/* Duplicated set for seamless loop */}
             <div className="flex items-center justify-center rounded-xl bg-white px-6 py-1.5 md:px-8">
-              <span className="font-serif text-xs font-normal text-black md:text-sm">ПРОМОКОД: ПЕРВЫЙ10</span>
+              <span className="font-serif text-xs font-normal text-black md:text-sm">ПРОМОКОД: ГАРАЖ10</span>
             </div>
             <div className="flex items-center justify-center rounded-xl px-4 py-1.5 md:px-6">
               <span className="font-serif text-xs font-normal text-white md:text-sm">
@@ -291,7 +291,7 @@ export default function YerbaVerdeLandingPage() {
               </span>
             </div>
             <div className="flex items-center justify-center rounded-xl bg-white px-6 py-1.5 md:px-8">
-              <span className="font-serif text-xs font-normal text-black md:text-sm">ПРОМОКОД: ПЕРВЫЙ10</span>
+              <span className="font-serif text-xs font-normal text-black md:text-sm">ПРОМОКОД: ГАРАЖ10</span>
             </div>
             <div className="flex items-center justify-center rounded-xl px-4 py-1.5 md:px-6">
               <span className="font-serif text-xs font-normal text-white md:text-sm">
@@ -299,7 +299,7 @@ export default function YerbaVerdeLandingPage() {
               </span>
             </div>
             <div className="flex items-center justify-center rounded-xl bg-white px-6 py-1.5 md:px-8">
-              <span className="font-serif text-xs font-normal text-black md:text-sm">ПРОМОКОД: ПЕРВЫЙ10</span>
+              <span className="font-serif text-xs font-normal text-black md:text-sm">ПРОМОКОД: ГАРАЖ10</span>
             </div>
             <div className="flex items-center justify-center rounded-xl px-4 py-1.5 md:px-6">
               <span className="font-serif text-xs font-normal text-white md:text-sm">
@@ -322,28 +322,28 @@ export default function YerbaVerdeLandingPage() {
           <div className="flex w-full max-w-7xl flex-col items-center gap-8 md:gap-12 lg:gap-14">
             <div className="hero-content flex flex-col items-center gap-5 text-center">
               <h1 className="text-balance font-serif text-3xl leading-tight tracking-tight text-white md:text-5xl lg:text-[56px]">
-                Откройте настоящий вкус чая мате
+                Автозапчасти и масла, которым можно доверять
               </h1>
               <p className="max-w-4xl text-pretty text-base leading-relaxed tracking-tight text-[#CCCCCC] md:text-lg">
-                Уникальный опыт, который превращает каждую чашку в особенный момент.
+                Оригинальные запчасти и моторные масла для вашего автомобиля. Подбор по марке, быстрая доставка и гарантия качества.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-2.5">
                 <Button className="h-12 rounded-xl bg-white px-4 font-serif text-base text-[#0E0E0E] hover:bg-white/90 md:text-lg">
-                  Купить сейчас
+                  Подобрать запчасти
                 </Button>
                 <Button
                   variant="outline"
                   className="h-12 rounded-xl border-[#CCCCCC] bg-transparent font-serif text-base text-white hover:bg-white/10 md:text-lg"
                 >
-                  Узнать больше
+                  Каталог
                 </Button>
               </div>
             </div>
             <div className="hero-image relative h-[300px] w-full max-w-2xl md:h-[400px] lg:h-[583px] lg:max-w-[884px]">
               <img
-                src="/images/design-mode/hero-image.png"
-                alt="Yerba Verde - премиальный чай мате"
-                className="h-full w-full object-contain"
+                src="https://cdn.poehali.dev/projects/1f0965e0-c0e5-4b08-b4b7-23c744cc40d1/files/45aa9a1e-504a-4b76-aabe-4e491b4f54fb.jpg"
+                alt="Автозапчасти и моторные масла"
+                className="h-full w-full rounded-2xl object-cover"
               />
             </div>
           </div>
@@ -354,35 +354,34 @@ export default function YerbaVerdeLandingPage() {
           <div className="mx-auto flex max-w-7xl flex-col items-start gap-8 lg:flex-row lg:gap-12">
             <div className="benefits-title flex flex-col gap-6 lg:flex-1">
               <h2 className="text-balance font-serif text-3xl leading-tight tracking-tight text-white md:text-4xl lg:text-5xl">
-                Непревзойденный вкус и качество
+                Надёжность и качество для вашего авто
               </h2>
               <p className="text-pretty text-base leading-relaxed tracking-tight text-white md:text-lg">
-                Натуральный чай мате высшего качества, сбалансированный и ароматный, без добавления сахара, для
-                настоящих ценителей традиционного напитка.
+                Только оригинальные запчасти и сертифицированные моторные масла от проверенных производителей.
+                Точный подбор под вашу марку и модель.
               </p>
             </div>
             <div className="flex flex-col gap-2 lg:flex-1">
               <div className="benefit-card flex flex-col gap-2 rounded-[20px] bg-gradient-to-r from-[#6B5C08] to-[#0E0E0E] p-6 md:p-8">
-                <h3 className="font-serif text-2xl leading-tight tracking-tight text-white md:text-4xl">100% Натуральный</h3>
+                <h3 className="font-serif text-2xl leading-tight tracking-tight text-white md:text-4xl">100% Оригинал</h3>
                 <p className="text-sm leading-relaxed tracking-tight text-white md:text-base">
-                  Чай мате из лучших плантаций Южной Америки, более 3000 листьев на килограмм.
+                  Только сертифицированные запчасти и масла от официальных поставщиков с гарантией.
                 </p>
               </div>
               <div className="benefit-card flex flex-col gap-2 rounded-[20px] bg-gradient-to-r from-[#6B5C08] to-[#0E0E0E] p-6 md:p-8">
                 <h3 className="font-serif text-2xl leading-tight tracking-tight text-white md:text-4xl">
-                  Мягкий и насыщенный вкус
+                  Быстрая доставка
                 </h3>
                 <p className="text-sm leading-relaxed tracking-tight text-white md:text-base">
-                  Идеальный баланс аромата и вкуса, без необходимости добавления сахара.
+                  Отправляем заказы по всей России. Популярные позиции всегда в наличии на складе.
                 </p>
               </div>
               <div className="benefit-card flex flex-col gap-2 rounded-[20px] bg-gradient-to-r from-[#6B5C08] to-[#0E0E0E] p-6 md:p-8">
                 <h3 className="font-serif text-2xl leading-tight tracking-tight text-white md:text-4xl">
-                  Выращен в горах
+                  Точный подбор
                 </h3>
                 <p className="text-sm leading-relaxed tracking-tight text-white md:text-base">
-                  Растет на высоте более 1200 метров в идеальных климатических условиях, что обеспечивает
-                  уникальный и стойкий вкус.
+                  Подбираем запчасти по VIN-номеру, марке и модели — без ошибок и лишних возвратов.
                 </p>
               </div>
             </div>
@@ -394,25 +393,24 @@ export default function YerbaVerdeLandingPage() {
           <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 lg:flex-row lg:gap-12">
             <div className="about-image w-full lg:flex-1">
               <img
-                src="/images/design-mode/about-image.png"
-                alt="Карта происхождения чая мате"
+                src="https://cdn.poehali.dev/projects/1f0965e0-c0e5-4b08-b4b7-23c744cc40d1/files/3c5be344-b5a4-434d-b29e-53bfdb07f88f.jpg"
+                alt="Склад автозапчастей"
                 className="h-auto w-full rounded-2xl object-cover"
               />
             </div>
             <div className="about-content flex flex-col gap-6 lg:flex-1">
               <h2 className="font-serif text-3xl leading-tight tracking-tight text-white md:text-4xl lg:text-5xl">
-                Происхождение вкуса
+                О нашем магазине
               </h2>
               <p className="text-pretty text-base leading-relaxed tracking-tight text-white md:text-lg">
-                В одной из самых высокогорных точек Южной Америки рождается чай мате, который выделяется
-                своим несравненным качеством. На высоте более 1200 метров идеальный климат и плодородная
-                почва создают условия для выращивания мате с уникальным ароматом и вкусом. Каждый лист
-                тщательно собирается, гарантируя сбалансированный и стойкий вкус, который делает каждую
-                чашку особенной. От горных плантаций до вашей чашки — испытайте настоящую сущность
-                натурального чая мате.
+                Мы поставляем автозапчасти и моторные масла с проверенной историей качества. Работаем
+                напрямую с официальными дистрибьюторами, поэтому гарантируем оригинальность каждой детали.
+                Наш склад насчитывает тысячи позиций для большинства марок автомобилей, а опытные
+                специалисты помогут подобрать именно то, что нужно вашему авто. От заявки до доставки —
+                всё прозрачно и быстро, чтобы ваша машина всегда была на ходу.
               </p>
               <Button className="h-12 w-full rounded-[20px] bg-gradient-to-r from-[#6B5C08] to-[#B59F26] font-serif text-lg text-white hover:opacity-90 md:text-xl">
-                Купить сейчас
+                Перейти в каталог
               </Button>
             </div>
           </div>
@@ -423,27 +421,27 @@ export default function YerbaVerdeLandingPage() {
           <div className="mx-auto max-w-7xl">
             <div className="rounded-[40px] border-2 border-[#1E1E1E] bg-[#0E0E0E] px-6 py-12 md:px-12 md:py-16 lg:px-24">
               <h2 className="mb-8 text-balance text-center font-serif text-3xl leading-tight tracking-tight text-white md:mb-12 md:text-4xl lg:text-[56px]">
-                Откройте для себя настоящий вкус традиции в любой момент
+                Всё для вашего автомобиля в одном месте
               </h2>
               <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
                 <div className="desire-image overflow-hidden rounded-2xl rounded-b-none">
                   <img
-                    src="/images/design-mode/desire-image-01.png"
-                    alt="Yerba Verde - упаковка"
+                    src="https://cdn.poehali.dev/projects/1f0965e0-c0e5-4b08-b4b7-23c744cc40d1/files/1851465a-1e2c-4b0e-9d25-059f3a7f0361.jpg"
+                    alt="Моторные масла"
                     className="h-full w-full object-cover"
                   />
                 </div>
                 <div className="desire-image overflow-hidden rounded-2xl rounded-b-none">
                   <img
-                    src="/images/design-mode/desire-image-02.png"
-                    alt="Yerba Verde - упаковка"
+                    src="https://cdn.poehali.dev/projects/1f0965e0-c0e5-4b08-b4b7-23c744cc40d1/files/5b6081a3-f620-44c6-bb1d-a7f03cbf125d.jpg"
+                    alt="Автозапчасти"
                     className="h-full w-full object-cover"
                   />
                 </div>
                 <div className="desire-image overflow-hidden rounded-2xl">
                   <img
-                    src="/images/design-mode/desire-image-03.png"
-                    alt="Yerba Verde - упаковка"
+                    src="https://cdn.poehali.dev/projects/1f0965e0-c0e5-4b08-b4b7-23c744cc40d1/files/3c5be344-b5a4-434d-b29e-53bfdb07f88f.jpg"
+                    alt="Склад запчастей"
                     className="h-full w-full object-cover"
                   />
                 </div>
@@ -457,24 +455,24 @@ export default function YerbaVerdeLandingPage() {
           <div className="mx-auto flex max-w-5xl flex-col items-center gap-8 md:gap-12">
             <div className="instigate-content flex flex-col gap-6 text-center">
               <h2 className="text-balance font-serif text-3xl leading-tight tracking-tight text-white md:text-4xl lg:text-[56px]">
-                Чего вы ждете?
+                Чего вы ждёте?
               </h2>
               <p className="text-pretty text-base leading-relaxed tracking-tight text-[#CCCCCC] md:text-lg">
-                Жизнь состоит из моментов, и хороший мате превращает простое в особенное. Не соглашайтесь на
-                меньшее — выбирайте настоящую эссенцию вкуса и наслаждайтесь каждым глотком.
+                Ваш автомобиль заслуживает лучшего. Не рискуйте с сомнительными деталями — выбирайте
+                оригинальные запчасти и качественные масла, которые продлят жизнь вашего авто.
               </p>
             </div>
             <div
               className="instigate-image relative flex min-h-[400px] w-full items-end justify-center rounded-[40px] p-6 md:min-h-[600px] md:p-10 lg:min-h-[850px]"
               style={{
                 backgroundImage:
-                  "url(https://hebbkx1anhila5yf.public.blob.vercel-storage.com/box-image-f1qFMJiDw7Rhdpat9cdzPtUdrGnBUq.png)",
+                  "url(https://cdn.poehali.dev/projects/1f0965e0-c0e5-4b08-b4b7-23c744cc40d1/files/45aa9a1e-504a-4b76-aabe-4e491b4f54fb.jpg)",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
             >
               <Button className="h-16 w-full max-w-md rounded-[20px] bg-gradient-to-r from-[#6B5C08] to-[#B59F26] font-serif text-xl text-white hover:opacity-90 md:h-24 md:text-3xl lg:text-[32px]">
-                Купить сейчас
+                Подобрать запчасти
               </Button>
             </div>
           </div>
@@ -485,17 +483,17 @@ export default function YerbaVerdeLandingPage() {
           <div className="mx-auto flex max-w-5xl flex-col items-center gap-8 md:gap-12">
             <div className="why-content flex flex-col gap-6 text-center">
               <h2 className="text-balance font-serif text-3xl leading-tight tracking-tight text-white md:text-4xl lg:text-[56px]">
-                Почему выбирают Yerba Verde?
+                Почему выбирают нас?
               </h2>
               <p className="text-pretty text-base leading-relaxed tracking-tight text-[#CCCCCC] md:text-lg">
-                Жизнь состоит из моментов, и хороший мате превращает простое в особенное. Не соглашайтесь на
-                меньшее — выбирайте настоящую эссенцию вкуса и наслаждайтесь каждым глотком.
+                Тысячи довольных клиентов, гарантия на все запчасти, честные цены и быстрая доставка по
+                всей стране. Мы помогаем держать ваш автомобиль в идеальном состоянии.
               </p>
             </div>
             <div className="why-image w-full">
               <img
-                src="/images/design-mode/why-image.png"
-                alt="Почему выбирают Yerba Verde"
+                src="https://cdn.poehali.dev/projects/1f0965e0-c0e5-4b08-b4b7-23c744cc40d1/files/5b6081a3-f620-44c6-bb1d-a7f03cbf125d.jpg"
+                alt="Почему выбирают нас"
                 className="h-auto w-full rounded-2xl object-cover"
               />
             </div>
@@ -509,19 +507,19 @@ export default function YerbaVerdeLandingPage() {
             <Card className="pricing-card flex flex-col gap-4 rounded-2xl border border-white/10 bg-gradient-to-br from-[#333333] to-[#0E0E0E] p-6 shadow-lg md:p-8">
               <div className="aspect-square w-full overflow-hidden rounded-[20px] bg-[#6B5C08]">
                 <img
-                  src="/images/design-mode/image-card-01.png"
-                  alt="Чай мате Yerba Verde - 1 кг"
+                  src="https://cdn.poehali.dev/projects/1f0965e0-c0e5-4b08-b4b7-23c744cc40d1/files/1851465a-1e2c-4b0e-9d25-059f3a7f0361.jpg"
+                  alt="Моторное масло синтетическое 5W-40"
                   className="h-full w-full object-cover"
                 />
               </div>
               <div className="flex flex-col gap-1">
                 <h3 className="text-lg font-semibold tracking-tight text-white md:text-xl">
-                  Чай мате Yerba Verde
+                  Моторное масло 5W-40
                 </h3>
-                <p className="text-sm text-white/55 md:text-base">1 кг</p>
+                <p className="text-sm text-white/55 md:text-base">Синтетика, 4 л</p>
               </div>
-              <p className="text-4xl font-bold tracking-tight text-white md:text-5xl">2 500 р.</p>
-              <p className="text-xs tracking-tight text-white md:text-sm">Рассрочка до 3 месяцев</p>
+              <p className="text-4xl font-bold tracking-tight text-white md:text-5xl">3 200 р.</p>
+              <p className="text-xs tracking-tight text-white md:text-sm">В наличии на складе</p>
               <Button className="h-12 w-full rounded-xl bg-[#B59F26] text-base font-medium text-white hover:bg-[#B59F26]/90 md:text-lg">
                 КУПИТЬ
               </Button>
@@ -531,19 +529,19 @@ export default function YerbaVerdeLandingPage() {
             <Card className="pricing-card flex flex-col gap-4 rounded-2xl border border-white/10 bg-gradient-to-br from-[#333333] to-[#0E0E0E] p-6 shadow-lg md:p-8">
               <div className="aspect-square w-full overflow-hidden rounded-[20px] bg-[#6B5C08]">
                 <img
-                  src="/images/design-mode/image-card-02.png"
-                  alt="Набор для мате Yerba Verde"
+                  src="https://cdn.poehali.dev/projects/1f0965e0-c0e5-4b08-b4b7-23c744cc40d1/files/5b6081a3-f620-44c6-bb1d-a7f03cbf125d.jpg"
+                  alt="Комплект ТО"
                   className="h-full w-full object-cover"
                 />
               </div>
               <div className="flex flex-col gap-1">
                 <h3 className="text-lg font-semibold tracking-tight text-white md:text-xl">
-                  Набор для мате Yerba Verde
+                  Комплект для ТО
                 </h3>
-                <p className="text-sm text-white/55 md:text-base">Мате + Калабас + Бомбилья</p>
+                <p className="text-sm text-white/55 md:text-base">Масло + 3 фильтра</p>
               </div>
-              <p className="text-4xl font-bold tracking-tight text-white md:text-5xl">7 500 р.</p>
-              <p className="text-xs tracking-tight text-white md:text-sm">Рассрочка до 4 месяцев</p>
+              <p className="text-4xl font-bold tracking-tight text-white md:text-5xl">5 900 р.</p>
+              <p className="text-xs tracking-tight text-white md:text-sm">Выгоднее, чем по отдельности</p>
               <Button className="h-12 w-full rounded-xl bg-[#B59F26] text-base font-medium text-white hover:bg-[#B59F26]/90 md:text-lg">
                 КУПИТЬ
               </Button>
@@ -553,19 +551,19 @@ export default function YerbaVerdeLandingPage() {
             <Card className="pricing-card flex flex-col gap-4 rounded-2xl border border-white/10 bg-gradient-to-br from-[#333333] to-[#0E0E0E] p-6 shadow-lg md:p-8">
               <div className="aspect-square w-full overflow-hidden rounded-[20px] bg-[#6B5C08]">
                 <img
-                  src="/images/design-mode/image-card-03.png"
-                  alt="Набор 3 упаковки чая мате Yerba Verde"
+                  src="https://cdn.poehali.dev/projects/1f0965e0-c0e5-4b08-b4b7-23c744cc40d1/files/5b6081a3-f620-44c6-bb1d-a7f03cbf125d.jpg"
+                  alt="Тормозные колодки"
                   className="h-full w-full object-cover"
                 />
               </div>
               <div className="flex flex-col gap-1">
                 <h3 className="text-lg font-semibold tracking-tight text-white md:text-xl">
-                  Набор 3 упаковки Yerba Verde
+                  Тормозные колодки
                 </h3>
-                <p className="text-sm text-white/55 md:text-base">3 кг</p>
+                <p className="text-sm text-white/55 md:text-base">Передние, комплект</p>
               </div>
-              <p className="text-4xl font-bold tracking-tight text-white md:text-5xl">6 900 р.</p>
-              <p className="text-xs tracking-tight text-white md:text-sm">Рассрочка до 3 месяцев</p>
+              <p className="text-4xl font-bold tracking-tight text-white md:text-5xl">2 400 р.</p>
+              <p className="text-xs tracking-tight text-white md:text-sm">Подбор по марке авто</p>
               <Button className="h-12 w-full rounded-xl bg-[#B59F26] text-base font-medium text-white hover:bg-[#B59F26]/90 md:text-lg">
                 КУПИТЬ
               </Button>
@@ -575,19 +573,19 @@ export default function YerbaVerdeLandingPage() {
             <Card className="pricing-card flex flex-col gap-4 rounded-2xl border border-white/10 bg-gradient-to-br from-[#333333] to-[#0E0E0E] p-6 shadow-lg md:p-8">
               <div className="aspect-square w-full overflow-hidden rounded-[20px] bg-[#6B5C08]">
                 <img
-                  src="/images/design-mode/image-card-04.png"
-                  alt="Набор 10 упаковок чая мате Yerba Verde"
+                  src="https://cdn.poehali.dev/projects/1f0965e0-c0e5-4b08-b4b7-23c744cc40d1/files/45aa9a1e-504a-4b76-aabe-4e491b4f54fb.jpg"
+                  alt="Комплект свечей зажигания"
                   className="h-full w-full object-cover"
                 />
               </div>
               <div className="flex flex-col gap-1">
                 <h3 className="text-lg font-semibold tracking-tight text-white md:text-xl">
-                  Набор 10 упаковок Yerba Verde
+                  Свечи зажигания
                 </h3>
-                <p className="text-sm text-white/55 md:text-base">10 кг</p>
+                <p className="text-sm text-white/55 md:text-base">Комплект 4 шт</p>
               </div>
-              <p className="text-4xl font-bold tracking-tight text-white md:text-5xl">19 900 р.</p>
-              <p className="text-xs tracking-tight text-white md:text-sm">Рассрочка до 4 месяцев</p>
+              <p className="text-4xl font-bold tracking-tight text-white md:text-5xl">1 600 р.</p>
+              <p className="text-xs tracking-tight text-white md:text-sm">Оригинал с гарантией</p>
               <Button className="h-12 w-full rounded-xl bg-[#B59F26] text-base font-medium text-white hover:bg-[#B59F26]/90 md:text-lg">
                 КУПИТЬ
               </Button>
@@ -600,7 +598,7 @@ export default function YerbaVerdeLandingPage() {
           <div className="mx-auto max-w-5xl">
             <div className="cta-box flex flex-col items-center gap-6 rounded-[20px] bg-gradient-to-r from-[#6B5C08] to-[#B59F26] p-6 md:flex-row md:gap-8 md:p-12 lg:p-16">
               <p className="flex-1 text-balance text-center font-semibold leading-tight tracking-tight text-white md:text-left md:text-2xl lg:text-[26px]">
-                Свяжитесь с нами прямо сейчас и узнайте больше о Yerba Verde!
+                Не нашли нужную деталь? Напишите нам — подберём запчасть под ваш автомобиль!
               </p>
               <Button className="h-12 w-full rounded-xl bg-[#0E0E0E] text-base text-white hover:bg-[#0E0E0E]/90 md:w-auto md:px-8 md:text-lg">
                 Связаться с нами
@@ -613,10 +611,10 @@ export default function YerbaVerdeLandingPage() {
         <footer className="w-full border-t border-[#333333] px-6 py-12 md:px-20 lg:px-[420px]">
           <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-6">
             <h2 className="font-serif text-2xl tracking-tight text-white md:text-3xl">
-              YERBA <span className="text-[#B59F26]">VERDE</span>
+              AUTO <span className="text-[#B59F26]">PARTS</span>
             </h2>
             <p className="text-center text-sm leading-relaxed tracking-tight text-white/55 md:text-base">
-              2025 - Yerba Verde. Все права защищены.
+              2025 - AutoParts. Автозапчасти и масла. Все права защищены.
             </p>
           </div>
         </footer>
